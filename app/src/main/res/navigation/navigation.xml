@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/gameFragment">
+
+    <fragment
+        android:id="@+id/gameExtendFragment"
+        android:name="com.example.errorbox.ui.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_extended" >
+
+        <action
+            android:id="@+id/action_gameExtendFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.errorbox.ui.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_gameWonFragment2"
+            app:destination="@id/gameWonFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment3"
+            app:destination="@id/gameOverFragment3" />
+        <action
+            android:id="@+id/action_gameFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameWonFragment"
+        android:name="com.example.errorbox.ui.GameWonFragment"
+        android:label="GameWonFragment" >
+        <action
+            android:id="@+id/action_gameWonFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment3"
+        android:name="com.example.errorbox.ui.GameOverFragment"
+        android:label="GameOverFragment" >
+        <action
+            android:id="@+id/action_gameOverFragment3_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.errorbox.ui.gallery.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_guiz" />
+</navigation>

@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <Preference
+            app:key="cred"
+            app:title="Click here for credentials"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="depends"
+            app:title="@string/switch_3" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:dependency="depends"
+            app:title="@string/sw_1" />
+
+        <SwitchPreferenceCompat
+            app:dependency="depends"
+            app:key="attachment"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

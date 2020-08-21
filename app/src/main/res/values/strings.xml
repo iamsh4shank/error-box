@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ErrorBox</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Switch 2</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="instructions">Instructions: This quiz contains ten problems related
+        to android and related technologies you need ot find the answer then at least get 7
+        scores to complete this round and get the hash for next problem.</string>
+    <string name="submit">Submit</string>
+    <string name="try_again">Try Again</string>
+    <string name="title_android_trivia_question">Android Question (%1$d/%2$d)</string>
+    <string name="correct_ans">Correct Answer</string>
+    <string name="wrong_ans">Wrong answer</string>
+    <string name="quiz">Quiz</string>
+    <string name="sw_1">Switch 1</string>
+    <string name="switch_3">Switch 3</string>
+</resources>
