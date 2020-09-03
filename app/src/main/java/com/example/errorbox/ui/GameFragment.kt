@@ -84,8 +84,7 @@ class GameFragment : Fragment() {
 
                 //If the answer is correct
                 //TODO
-                //add score varibale to increment every time
-                //add the setQuestiopns method to change the questions
+
 
                 if (answers[answerIndex] == currentQuestion.answers[0]) {
                     //score += 1

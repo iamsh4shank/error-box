@@ -45,7 +45,7 @@ public class QuizFragment extends Fragment {
     public void login(TextInputEditText uname, TextInputEditText pwd) {
 
         //TODO
-        //use equals extension instead of ==
+
         if (uname.getText().toString() == (Constants.username) && pwd.getText().toString().equals(Constants.password)) {
             openFragment();
         } else {

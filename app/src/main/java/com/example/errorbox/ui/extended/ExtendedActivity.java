@@ -27,8 +27,6 @@ public class ExtendedActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //TODO
-                //Fix openGame function and then write it just below this comment
-                //openGame();
                 buttonQuiz.setVisibility(View.INVISIBLE);
             }
         });

@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         //TODO
-        //Quiz part not opening add R.id.nav_gallery(R.id.nav_gallery)
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_slideshow)
                 .setDrawerLayout(drawer)
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         //TODO
-        //comment this line to make hamburger visible
         toolbar.setNavigationIcon(null);
 
     }
@@ -76,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     //TODO
-    //comment the whole onPrepareOptionsMenu to make the overflow button visible
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {

@@ -35,8 +35,7 @@ public class SettingsActivity extends AppCompatActivity {
             SwitchPreference switch3 = findPreference("depends");
 
             //TODO
-            //Need to use the sam order or comment all the conditions insode if block and just take out line number 41-46
-            //also change the dependence links through xml file
+
             if (switch1.isChecked() && switch2.isChecked()) {
                 if (!switch3.isChecked()) {
                     myPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {

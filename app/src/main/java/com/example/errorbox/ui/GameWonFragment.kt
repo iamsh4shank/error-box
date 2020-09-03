@@ -18,7 +18,7 @@ class GameWonFragment : Fragment() {
         binding.nextMatchButton.setOnClickListener{view: View->
             val nextFrag = GameFragment()
             //TODO
-            //Here app will crash use requireActivity() instead of activity and add .commit in last
+
             activity.supportFragmentManager.beginTransaction()
                     .replace(R.id.container, nextFrag, "findThisFragment")
                     .addToBackStack(null)

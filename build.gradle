@@ -2,8 +2,6 @@
 buildscript {
     ext {
         //TODO
-        //add kotlin_version
-        //kotlin_version = '1.4.0'
         version_navigation = "1.0.0"
     }
     repositories {
