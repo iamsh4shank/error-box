@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.errorbox.R
 import com.example.errorbox.databinding.FragmentGameWonBinding
+import com.example.errorbox.hints.HintAFragment
 
 class GameWonFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -16,13 +17,8 @@ class GameWonFragment : Fragment() {
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_won, container, false)
         binding.nextMatchButton.setOnClickListener{view: View->
-            val nextFrag = GameFragment()
-            //TODO
-            //Here app will crash use requireActivity() instead of activity and add .commit in last
-            activity.supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, nextFrag, "findThisFragment")
-                    .addToBackStack(null)
-                    //.commit()
+            val hintAFragment = HintAFragment(context, activity)
+            hintAFragment.init("Password for next module zip file is 'amFOSS@pRoB3'")
         }
         return binding.root
     }

@@ -35,7 +35,7 @@ public class SettingsActivity extends AppCompatActivity {
             SwitchPreference switch3 = findPreference("depends");
 
             //TODO
-            //Need to use the sam order or comment all the conditions insode if block and just take out line number 41-46
+            //Need to use the same order or comment all the conditions insode if block and just take out line number 41-46
             //also change the dependence links through xml file
             if (switch1.isChecked() && switch2.isChecked()) {
                 if (!switch3.isChecked()) {
@@ -53,7 +53,7 @@ public class SettingsActivity extends AppCompatActivity {
                 myPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                     public boolean onPreferenceClick(Preference preference) {
                         HintAFragment hintAFragment = new HintAFragment(getContext(), getActivity());
-                        hintAFragment.init("Make correct combination of switches to unlock this. Look SettingsActivity to understand how to mechanism works.");
+                        hintAFragment.init("Make a correct combination of switches to unlock this. Look SettingsActivity to understand how mechanism works.");
                         return true;
                     }
                 });

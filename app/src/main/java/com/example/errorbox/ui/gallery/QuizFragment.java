@@ -20,7 +20,8 @@ import com.google.android.material.textfield.TextInputEditText;
 public class QuizFragment extends Fragment {
 
     private QuizViewModel quizViewModel;
-    View root;
+    //initialize root here
+    //View root;
 
     TextInputEditText username;
     TextInputEditText pwd;
