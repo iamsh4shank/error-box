@@ -52,7 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
                 myPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                     public boolean onPreferenceClick(Preference preference) {
                         HintAFragment hintAFragment = new HintAFragment(getContext(), getActivity());
-                        hintAFragment.init("Make correct combination of switches to unlock this. Look SettingsActivity to understand how to mechanism works.");
+                        hintAFragment.init("Make a correct combination of switches to unlock this. Look SettingsActivity to understand how mechanism works.");
                         return true;
                     }
                 });

@@ -26,21 +26,13 @@ public class ExtendedActivity extends AppCompatActivity {
         buttonQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO
                 buttonQuiz.setVisibility(View.INVISIBLE);
             }
         });
     }
     //remove comment and add FragmentTransaction
     public void openGame() {
-        //make some error here
-        /*GameFragment mFragment = null;
-        mFragment = new GameFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        //FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container_a, mFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();*/
+        //write function to open game
     }
 }
 

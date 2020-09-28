@@ -124,12 +124,6 @@ class GameFragment : Fragment() {
                     //winning condition
                     //write function to open GameWonFragment
                     if (score >=2) {
-
-                        /*val nextFrag = GameWonFragment()
-                        activity!!.supportFragmentManager.beginTransaction()
-                                .replace(R.id.container_a, nextFrag, "findThisFragment")
-                                .addToBackStack(null)
-                                .commit()*/
                     }
                 }
             }
