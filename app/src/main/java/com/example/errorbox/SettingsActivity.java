@@ -34,8 +34,7 @@ public class SettingsActivity extends AppCompatActivity {
             SwitchPreference switch2 = findPreference("attachment");
             SwitchPreference switch3 = findPreference("depends");
 
-            //TODO
-
+            //switch working
             if (switch1.isChecked() && switch2.isChecked()) {
                 if (!switch3.isChecked()) {
                     myPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {

@@ -43,8 +43,7 @@ public class QuizFragment extends Fragment {
 
     public void login(TextInputEditText uname, TextInputEditText pwd) {
 
-        //TODO
-
+        //validation
         if (uname.getText().toString() == (Constants.username) && pwd.getText().toString().equals(Constants.password)) {
             openFragment();
         } else {

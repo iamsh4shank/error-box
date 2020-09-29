@@ -83,11 +83,8 @@ class GameFragment : Fragment() {
 
 
                 //If the answer is correct
-                //TODO
-
-
                 if (answers[answerIndex] == currentQuestion.answers[0]) {
-                    //score += 1
+                    //score is static
                     questionIndex++
                     if (questionIndex < numQuestions) {
                         currentQuestion = questions[questionIndex]
@@ -120,7 +117,6 @@ class GameFragment : Fragment() {
                                 .addToBackStack(null)
                                 .commit()
                     }
-                    //TODO
                     //winning condition
                     //write function to open GameWonFragment
                     if (score >=2) {

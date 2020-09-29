@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-//TODO
-
 
 android {
     compileSdkVersion 29
@@ -30,14 +28,7 @@ android {
 }
 
 dependencies {
-    //TODO
-    //add preference version
-    //def preference_version = "1.1.1"
-
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    //TODO
-    //add appcompat dependency
-    //implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
@@ -47,14 +38,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    //TODO
-    //dependency
-    //implementation "androidx.preference:preference:$preference_version"
     implementation "androidx.core:core-ktx:+"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
-    //TODO
-    //add kotlin dependency
-    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "android.arch.navigation:navigation-fragment-ktx:$version_navigation"
     implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
 
