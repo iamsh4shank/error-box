@@ -19,11 +19,12 @@ class GameWonFragment : Fragment() {
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_won, container, false)
         binding.nextMatchButton.setOnClickListener{view: View->
-            
+            val name: EditText = binding.name_tag
+            val nameS:String = name.toString()
             val hintAFragment = HintAFragment(context, activity)
             val rand = Random()
             val id: Int = rand.nextInt(1000)*1000
-            hintAFragment.init("You did it! The final level is in /home/Kernel. Good Luck! And remember to take a screenshot of this window. ID is: $id")
+            hintAFragment.init("You did it! $nameS The final level is in /home/Kernel. Good Luck! And remember to take a screenshot of this window. ID is: $id")
         }
         return binding.root
     }
