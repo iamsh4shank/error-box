@@ -32,7 +32,7 @@
             android:background="#252525"
             android:paddingStart="@dimen/button_padding"
             android:paddingEnd="@dimen/button_padding"
-            android:text="Click to Get next problem Hash"
+            android:text="Click to here to submit "
             android:textColor="#ffffff"
             android:textSize="@dimen/button_text_size"
             android:textStyle="bold"
